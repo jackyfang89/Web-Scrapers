@@ -40,6 +40,7 @@ for suf in suffixes:
 #     if suf != "0-9": continue
     
     for i in range(1, total_pages + 1):
+        time.sleep(1) #pause for 1 second for each page
         sub_url = url
         if i != 1:
             sub_url = url + "?page=" + str(i)
